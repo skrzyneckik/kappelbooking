@@ -5,9 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "deploy": "ng lint && ng build --prod && firebase deploy"
   },
   "private": true,
   "dependencies": {
@@ -24,7 +23,9 @@
     "@angular/pwa": "^0.7.5",
     "@angular/router": "^6.1.0",
     "@angular/service-worker": "^6.1.0",
+    "angularfire2": "^5.0.0-rc.12",
     "core-js": "^2.5.4",
+    "firebase": "^5.4.2",
     "rxjs": "^6.0.0",
     "zone.js": "~0.8.26"
   },
